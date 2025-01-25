@@ -206,8 +206,8 @@ def create_video(quiz_data, video_filename, category):
     # Write the video file with GPU acceleration
     video.write_videofile(
         f'Videos/{video_filename}',
-        fps=24,
-        codec='h264_nvenc',  # Use NVIDIA GPU encoder
+        fps=10,
+        codec='libx264',  # Use NVIDIA GPU encoder
         ffmpeg_params=['-preset', 'fast']  # Adjust the preset as needed
     )
 
