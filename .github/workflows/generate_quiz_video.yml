@@ -30,7 +30,7 @@ jobs:
 
     - name: Move video to Video folder
       run: |
-        mkdir -p Video
+        mkdir -p Videos
         mv Videos/*.mp4 Video/
 
     - name: Commit and push video
