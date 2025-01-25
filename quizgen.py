@@ -208,6 +208,7 @@ def create_video(quiz_data, video_filename, category):
         f'Videos/{video_filename}',
         fps=10,
         codec='libx264',  # Use NVIDIA GPU encoder
+        audio_codec='aac',
         ffmpeg_params=['-preset', 'fast']  # Adjust the preset as needed
     )
 
